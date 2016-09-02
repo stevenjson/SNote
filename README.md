@@ -1,0 +1,2 @@
+# SNote
+My Class Notes
