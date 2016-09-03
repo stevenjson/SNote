@@ -7,6 +7,7 @@ Welcome to SNote's documentation!
 =================================
 
 Contents:
+---------
 
 .. toctree::
    STT351/index
@@ -14,12 +15,3 @@ Contents:
    CSE450/index
    :maxdepth: 1
    
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-

@@ -9,10 +9,10 @@ Welcome to SNote's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 1
    STT351/index
    CSE491/index
    CSE450/index
+   :maxdepth: 1
    
 
 
