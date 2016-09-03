@@ -3,15 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SNote's documentation!
-=================================
+CSE 491 Class Notes
+===================
 
 Contents:
 
 .. toctree::
-   STT351/index
-   CSE491/index
-   CSE450/index
+   Notes/0906
    :maxdepth: 1
    
 
