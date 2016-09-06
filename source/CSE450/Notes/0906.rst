@@ -25,9 +25,9 @@ EX
  * Pattern: 0 - 9
 
 Lexical analyzer
- # Correctly identifies all tokens within a string
- # Discard usless tokens (whitespace and comments)
- # Returns each remaining token with its lexeme and the line number it was on
+  # Correctly identifies all tokens within a string
+  # Discard usless tokens (whitespace and comments)
+  # Returns each remaining token with its lexeme and the line number it was on
 
 Patterns
  * Condition: if
@@ -53,8 +53,8 @@ Using Regular Expressions
 
 We need to divide ip an input stream into lexemes
 
- # Design a set of reqular expressions
- # Plug them into Lex (Harder without this)
+  # Design a set of reqular expressions
+  # Plug them into Lex (Harder without this)
 
 Project 1
 ---------
