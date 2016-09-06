@@ -20,16 +20,16 @@ A *token* is a category of meaningful substrings in the source language
 
 A *Lexeme* is a substring that represents an instance of a token.
 
-EX:
+EX
 * Token: Static int
 * Pattern: 0 - 9
 
-Lexical analyzer:
+Lexical analyzer
 # Correctly identifies all tokens within a string
 # Discard usless tokens (whitespace and comments)
 # Returns each remaining token with its lexeme and the line number it was on
 
-Patterns:
+Patterns
 * Condition: if
 * Type: int or float or char
 * Command: print or return or define
@@ -62,6 +62,7 @@ Project 1
 Correctness is job 1 and 2 and 3
 
 Implement them nice so it's easier to build on them
+
 * Keep it simple
 * Design things you can test
 * Don't optimize prematurely
