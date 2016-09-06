@@ -15,19 +15,19 @@ What is Lexing?
 
 A *token* is a category of meaningful substrings in the source language
 
-* In english this would be types of words or punctuation i.e noun, verb, adj, end-mark.
-* In a program, this could be identifiers, floats, math symbol, keyword, etc...
+ * In english this would be types of words or punctuation i.e noun, verb, adj, end-mark.
+ * In a program, this could be identifiers, floats, math symbol, keyword, etc...
 
 A *Lexeme* is a substring that represents an instance of a token.
 
 EX
-* Token: Static int
-* Pattern: 0 - 9
+ * Token: Static int
+ * Pattern: 0 - 9
 
 Lexical analyzer
-# Correctly identifies all tokens within a string
-# Discard usless tokens (whitespace and comments)
-# Returns each remaining token with its lexeme and the line number it was on
+ # Correctly identifies all tokens within a string
+ # Discard usless tokens (whitespace and comments)
+ # Returns each remaining token with its lexeme and the line number it was on
 
 Patterns
  * Condition: if
@@ -53,8 +53,8 @@ Using Regular Expressions
 
 We need to divide ip an input stream into lexemes
 
-# Design a set of reqular expressions
-# Plug them into Lex (Harder without this)
+ # Design a set of reqular expressions
+ # Plug them into Lex (Harder without this)
 
 Project 1
 ---------
@@ -63,8 +63,8 @@ Correctness is job 1 and 2 and 3
 
 Implement them nice so it's easier to build on them
 
-* Keep it simple
-* Design things you can test
-* Don't optimize prematurely
-* It's easier to modify a working system than to get a system working
+ * Keep it simple
+ * Design things you can test
+ * Don't optimize prematurely
+ * It's easier to modify a working system than to get a system working
 
