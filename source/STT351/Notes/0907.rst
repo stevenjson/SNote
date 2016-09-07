@@ -10,5 +10,8 @@ Examples
  * Range
  * Simple Varience
 
+Sample Varience
+_______________
+
 Simple Varience *Definition in book pg. 36*
- 
+
