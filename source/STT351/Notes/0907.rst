@@ -1,4 +1,14 @@
 09/07 Notes
 ===========
 
+1.4 Measures of Variability
+---------------------------
 
+Examples
+ * Standard Deviations
+  * D = sqrt(D^2)
+ * Range
+ * Simple Varience
+
+Simple Varience *Definition in book pg. 36*
+ 
