@@ -15,3 +15,38 @@ _______________
 
 Simple Varience *Definition in book pg. 36*
 
+Proposition *See page 39*
+
+Fourth Spread
+_____________
+
+f_s = upper fourth - lower fourth
+
+You have 50% of your data inbetween the upper and lower fourths
+
+Homework: Chpt 1.4 - 44, 51, 55, 58
+
+
+2.1 Sample Spaces and Events
+----------------------------
+
+A *Sample Space* of an expirement is all of the possible outcomes for that expirement
+
+An *Event* is a subset of all the possible outcomes
+ * A *Simple Event* has only one outcomes
+ * A *Compund Event* has multiple outcomes
+
+2.2 Axioms of Probability
+---------------------
+
+ #. For any event, the probability is 0 or greater
+ #. Total Probability is 1
+ #. The sum of all events probability is 1
+ 
+P(nullset) = 0
+
+2.3 Counting Techniques
+-----------------------
+
+Look over Permuntations and Combinations in book
+
