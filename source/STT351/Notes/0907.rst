@@ -6,7 +6,7 @@
 
 Examples
  * Standard Deviations
-  * D = sqrt(D^2)
+ * D = sqrt(D^2)
  * Range
  * Simple Varience
 
@@ -33,11 +33,12 @@ Homework: Chpt 1.4 - 44, 51, 55, 58
 A *Sample Space* of an expirement is all of the possible outcomes for that expirement
 
 An *Event* is a subset of all the possible outcomes
- * A *Simple Event* has only one outcomes
- * A *Compund Event* has multiple outcomes
+
+* A *Simple Event* has only one outcomes
+* A *Compund Event* has multiple outcomes
 
 2.2 Axioms of Probability
----------------------
+-------------------------
 
  #. For any event, the probability is 0 or greater
  #. Total Probability is 1

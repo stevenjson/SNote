@@ -11,13 +11,13 @@ Either:
 Verification
  * 1 to 1 matching
  * identity is clamed
-   * i.e. Iphone verifying owner fingerprint (1 identity)
+    * i.e. Iphone verifying owner fingerprint (1 identity)
  * output is yes or no (genunine or imposter)
  
 Identification
  * 1 to N matching
  * Asks system "Who am I?"
-   * No identity is clamed
+    * No identity is clamed
  * Output is Identity or no match (not binary since multiple ids)
 
 De-Duplication
@@ -36,7 +36,7 @@ Trait should *ideally* be
  #. Universality (most humans have this trait)
  #. Integrity (is it easy to replicate?)
      * Trait is resiliant to circumvention
-       * Spoofing and obfuscating
+        * Spoofing and obfuscating
  #. Performance (how easy is it to get information from the trait?)
  #. Acceptability (how willing is population to give trait?)
  
