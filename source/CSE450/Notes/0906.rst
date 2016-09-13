@@ -1,4 +1,70 @@
 09/06 Notes
 ===========
 
+Dropbox link to in-class examples (guarenteed to work on arctic)
+
+Down-to Operator
+----------------
+int x = 10
+while (x --> 10){
+do
+}
+
+What is Lexing?
+---------------
+
+A *token* is a category of meaningful substrings in the source language
+
+ * In english this would be types of words or punctuation i.e noun, verb, adj, end-mark.
+ * In a program, this could be identifiers, floats, math symbol, keyword, etc...
+
+A *Lexeme* is a substring that represents an instance of a token.
+
+EX
+ * Token: Static int
+ * Pattern: 0 - 9
+
+Lexical analyzer
+  #. Correctly identifies all tokens within a string
+  #. Discard usless tokens (whitespace and comments)
+  #. Returns each remaining token with its lexeme and the line number it was on
+
+Patterns
+ * Condition: if
+ * Type: int or float or char
+ * Command: print or return or define
+ * Static int: 0 - 9 +
+ * id: [a-zA-Z][a-zA-Z0-9]
+ * Math: +-/ etc
+ * assign =
+ * Compare
+ * Whitespace
+ * Endline
+ * Unknown: Weird things like the copyright symbol
+
+Lookaheads
+----------
+A *lookahead* will be important for lexical analysis
+
+Tokens are read left to right, not obvious at first what a token is
+
+Using Regular Expressions
+-------------------------
+
+We need to divide ip an input stream into lexemes
+
+  #. Design a set of reqular expressions
+  #. Plug them into Lex (Harder without this)
+
+Project 1
+---------
+
+Correctness is job 1 and 2 and 3
+
+Implement them nice so it's easier to build on them
+
+ * Keep it simple
+ * Design things you can test
+ * Don't optimize prematurely
+ * It's easier to modify a working system than to get a system working
 
