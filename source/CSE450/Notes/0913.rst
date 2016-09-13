@@ -1,4 +1,33 @@
 09/13
 =====
 
+e = epsilon
+
+Don't use RegEx to find syntax, is bad.
+
+Context Free Grammars
+---------------------
+
+They consist of 4 components (BNF)
+ * Terminal Symbols = tokens
+ * Non-terminal Symbols = syntactic variables
+ * Start Symbol S = special non-terminal
+ * Production RUles for the form LHS --> RHS
+
+Grammar for a balenced-parentheses language
+ * S--> (S)S
+ * S--> e
+    * 1 non-terminal: S
+    * 2 terminals: "(" , ")"
+    * Start symbol: S
+    * 2 Production RUles
+
+Shorthand
+---------
+
+vertical bar | used to combine multiple Productions
+ * i.e. S --> aSa|T and T --> bTb|e
+
+*Derivation* = sucessive application of Productions starting from S
+
 
