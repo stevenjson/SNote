@@ -1,0 +1,54 @@
+09/13 Notes
+===========
+
+Recognition
+-----------
+
+Either:
+ * verification
+ * identification
+
+Verification
+ * 1 to 1 matching
+ * identity is clamed
+   * i.e. Iphone verifying owner fingerprint (1 identity)
+ * output is yes or no (genunine or imposter)
+ 
+Identification
+ * 1 to N matching
+ * Asks system "Who am I?"
+   * No identity is clamed
+ * Output is Identity or no match (not binary since multiple ids)
+
+De-Duplication
+--------------
+
+Avoid duplication of identities
+ * similar to identification
+
+Traits
+------
+
+Trait should *ideally* be
+ #. Unique or distinctive
+ #. Easy to collect
+ #. Permanence (does it completely change?)
+ #. Universality (most humans have this trait)
+ #. Integrity (is it easy to replicate?)
+     * Trait is resiliant to circumvention
+       * Spoofing and obfuscating
+ #. Performance (how easy is it to get information from the trait?)
+ #. Acceptability (how willing is population to give trait?)
+ 
+
+System / Applications
+---------------------
+
+ #. Cooperative vs Non-cooperative user(bank user vs criminal at station)
+ #. Overt vs Covert Deployment
+ #. Habituated vs Non-Habituated users (used to getting data collected or not)
+ #. Attended vs Unattended operation (does the user require human interaction)
+ #. Control vs Uncontrolled (environment is very controlled vs not)
+ #. Closed vs Open (data is not shared with another application or is shared)
+ 
+

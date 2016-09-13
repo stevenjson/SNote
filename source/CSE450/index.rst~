@@ -10,14 +10,6 @@ Contents:
 
 .. toctree::
    Notes/0906
+   Notes/0908
    :maxdepth: 1
    
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
