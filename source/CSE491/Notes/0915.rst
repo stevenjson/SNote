@@ -69,6 +69,9 @@ Symmetric Matcher
  * Number of Genuine = N x M choose 2
  * Number of Imposter = Number of Scores - Number of Genuine = N choose 2 x m^2
  
+False Match Rate = fmr(eata) = number of imp > eata / number of imp
+False NonMatch Rate = fnmr(eata) = number of genuine < eata / number of genuine
+
 
  
 
