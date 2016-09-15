@@ -1,0 +1,78 @@
+09/15 Notes
+===========
+
+Level 1 Fingerprints
+--------------------
+
+Class
+
+ #. Arch / Tented Arch
+ #. Whorl
+ #. Left Loop
+ #. Right Loop
+ #. Double Loop
+
+My fingerprints look like
+-------------------------
+
+Right
+ * Thumb: Double Loop
+ * Pointer: Whorl
+ * Middle: Arch
+ * Ring: Whorl
+ * Pinkie: Arch
+ 
+Left
+ * Thumb: Arch
+ * Pointer: Whorl
+ * Middle: Arch
+ * Ring: Whorl
+ * Pinkie: Whorl
+
+Verification System
+-------------------
+
+Give it a threshold to reach
+
+EX: System has 3 samples, person gives 3 samples
+ * 6 choose 2 = number of scores
+
+Scores
+______
+
+Either Genuine score or Imposter score
+
+*Genuine Score* compare samples from same identity
+
+*Imposter Score* compare samples across identities
+
+Genuine + Imposter = Total Number of Scores
+
+From Example:
+ * you can have 6 genuine and 9 imposter
+ * You could have 12 genuine and 18 imposter
+
+This depends on the matcher
+ * Symmetric Matcher: A to B = B to A
+ * Asymmetric Matcher: A to B may or may not be equal to B to A
+
+Matchers
+--------
+
+EX:
+
+Symmetric Matcher
+ #. N identities
+ #. m samples per identity
+
+ * Number of Scores = NM choose 2
+ * Number of Genuine = N x M choose 2
+ * Number of Imposter = Number of Scores - Number of Genuine = N choose 2 x m^2
+ 
+
+ 
+
+
+
+
+
