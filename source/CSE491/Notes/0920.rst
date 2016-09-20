@@ -1,0 +1,28 @@
+09/20 Notes
+===========
+
+Variance is sigma^2 Remember for quizzes.
+
+Verification Errors
+-------------------
+
+Error Rates
+___________
+
+False Match Rate = (number of imp scores > eata) / number of imp scores = False Accept Rate
+
+False NonMatch Rate = (number of gen scores < eata) / number of gen scores = False Reject Rate
+
+Score Distrtibution
+-------------------
+
+Drawings for days. Check the book?
+
+d-prime metric
+--------------
+
+Relationship between mean and varience
+
+d-prime = abs(mui_gen - mui_imp) / sqrt((sigma^2_gen + sigma^2_imp) / 2)
+
+
