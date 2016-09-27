@@ -1,0 +1,47 @@
+09/27 Notes
+===========
+
+Verification Errors
+-------------------
+
+Metrics to check
+________________
+
+ #. Area under Curve (AUC)
+ #. Equal Error Rate (EER) = where x = y line intersects error curve (for DET)
+ #. D-Prime
+ #. False NonMatch Rate (FNMR)
+ #. TMR = 1 - FNMR (True match rate)
+
+Identification Error Rates
+--------------------------
+
+Database == Gallery
+
+Gallery has several identities residing in it
+
+Each identity has a template = set of features that denote identity
+
+A probe gets a score from each identity, so N scores
+
+Errors
+______
+
+ #. False Positive Identification Rate (FPIR) = when probe matches when not in system
+      * Need to know N, eata, top K matches
+ #. False Negative Identification Rate (FNIR) = when probe does not match id that is in system
+      * Need to know N, eata, top K matches
+
+For top K matches
+_________________
+
+Generate cumulative match characteristics Graph (CMC)
+
+y = TIR
+x = Rank = K
+
+Shows you what percent of probes are correctly matched from rank 1 to K
+
+In a closed set, each probe has a matching identity, we want to know what rank we find it at
+
+In a open set, it may not have an identity
