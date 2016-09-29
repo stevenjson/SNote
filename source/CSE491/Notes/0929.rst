@@ -1,0 +1,33 @@
+09/29 Notes Chapter 2
+=====================
+
+Project 2 is 6 lines of code!
+
+
+Fingerprints
+------------
+
+Questions to ask
+
+ #. Anatomy
+ #. Classification
+ #. Segmentation/ Detection
+ #. Feature Extraction
+ #. Matching/ Compare
+
+There are 3 levels of Fingerprint scanning
+
+Level 1 only needs scanner with 250dpi (dots per inch)
+ * Can normally only extract core and delta points
+ * Can extract Orientation Field *(project 2 is this)*
+
+Level 2 250 - 500 dpi
+ * Minutiae Points are revealed here (place where ridges break or abruptly chang, etc...)
+    * (x, y, theta)
+
+Level 3 1000 dpi
+ * Get shape of ridges and contours
+ * See sweat pores
+ * Not used in commercial applications, used in crime scene investigations (latent prints)
+
+
