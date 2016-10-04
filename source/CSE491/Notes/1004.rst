@@ -1,0 +1,69 @@
+10/04 Notes
+===========
+
+Image
+-----
+
+Image is a matrix
+
+Each cell of a matrix is a pixel
+
+RGB has 3 values in each cell (8 bits each value)
+
+Gray has 1 value in each cell (8 bits for value)
+
+GrayScale
+_________
+
+0 = black
+
+255 = white
+
+Also known as pixel intensity
+
+
+Operations
+----------
+
+2 types of transformations
+ * photometric - manipulating pixel intensity
+ * gemetric - covered later on
+
+ Operations List
+ #. Filtering
+
+      * photometric
+      * implemeted with convolution
+      * depends on filters/masks - also a matrix - tend to be 3 x 3 - can have negative numbers in matrix
+
+         * For GreyScale:
+         * multiply value with value it's over and add them all together - replace center value with value
+         * move 1 pixel to right and repeat process for all pixels - pretend modified value is still old value
+      * Edge Filters
+
+ #. Gradient Operation
+      * A difference in pixels
+
+Edge Filters
+------------
+
+S_x == vertical gradient
+
+S_y == horizontal gradient
+
+S_x Matrix:
+
+-1 0 1
+
+-1 0 1
+
+-1 0 1
+
+S_y Matrix:
+
+1 1 1
+
+0 0 0
+
+-1 -1 -1
+
