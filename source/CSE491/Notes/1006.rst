@@ -1,0 +1,16 @@
+10/06 Notes
+===========
+
+Slides
+
+Use edge filters to find ridge orientation
+
+Intra-Class Variations
+----------------------
+
+Things that change on biometric thing
+ * illumination
+ * grown beard vs shaved beard
+ * rotation/translation of fingerprint on scanner
+
+

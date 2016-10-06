@@ -17,5 +17,6 @@ Contents:
    Notes/0927
    Notes/0929
    Notes/1004
+   Notes/1006
    :maxdepth: 1
    
