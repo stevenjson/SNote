@@ -1,0 +1,47 @@
+10/11 Notes
+===========
+
+A fingerprint is an Oriented texture pattern
+
+Oriendted Texture (FFT Method)
+------------------------------
+
+Orientation (range = [0,pi))
+
+Frequency = frequency of ridges
+
+w(x,y) = Amplitude x cos(2pi x frequency x (xcos(theta) + ysin(theta)))
+
+Example
+ * A = 150
+ * freq = 1/8 (approx)
+ * theta = pi / 4
+ 
+for i = 1 : 11
+for j = 1 : 11
+
+w(i, j)
+
+
+Coordinates for image domain
+----------------------------
+
+row by column, not x by y
+
+so top left is (0,0)
+
+
+What is Amplitude, freq, and theta? (FFT Method)
+-------------------------------------------------
+
+image (spatial domain) -- fast fourier transform --> frequency domain == W(u,v)
+
+frequency = distance between center of W and bright spot (impulse) = sqrt((u^)^2 + (v^)^2)
+
+theta = angle of frequency line and x axis = arctan(v^ / u^)
+
+W(u^, v^) = brightest pixel location
+
+Amplitude = color value of W(u^, v^) = abs(W(u^, v^))
+
+
