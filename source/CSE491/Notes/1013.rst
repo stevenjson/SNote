@@ -1,0 +1,124 @@
+10/13 Notes
+===========
+
+Quiz Thursday
+ * Covers Chapter 1
+ * Cheat Sheet
+ * Notes and Book and HW 1
+ 
+Users / Subjects
+----------------
+
+Some users overlap (fnmr, fmr) some are very unique (never overlap)
+
+Categories of users (Dottingtons Zoo) (Biometric Menagerie)
+____________________________________________________________
+
+ #. Sheep - FMR and FNMR are low (unique and well behaved users)
+ #. Goat - FNMR is high
+ #. Lamb - FMR is high (voices can be mimiced easy, etc...) (not trying to manipulate system)
+ #. Wolf - FMR is high (deliberatly manipulates trait to defeat system, i.e voice)
+
+
+Orientation Field
+-----------------
+
+Level 1 details - also singular points
+
+Method 2 - Gradient Method
+__________________________
+
+Primarily uses Edge Filters
+
+Img(x)S_x = G_x
+ * convolution operation (conv2 in matlab)
+ * Img is image
+ * S_x is filter
+ * G_x is output matrix
+
+Edge Filters
+++++++++++++
+
+Sobel Filter
+````````````
+
+S_x
+
+-1 0 1
+
+-2 0 2
+
+-1 0 1
+
+S_y
+
+1 2 1
+
+0 0 0
+
+-1 -2 -1
+
+Robert's Cross
+``````````````
+
+R_x
+
+1 0 
+
+0 -1
+
+R_y
+
+0 1
+
+-1 0
+
+Prewitt's Filter
+````````````````
+
+P_x
+
+-1 0 1
+
+-1 0 1
+
+-1 0 1
+
+P_y
+
+1 1 1
+
+0 0 0
+
+-1 -1 -1
+
+
+Prewitt and Sobel tend to be most used
+
+Canney Edge is good
+
+Will use Sobel for project
+
+
+Algorithm for Orientation Fields
+--------------------------------
+
+ #. Convolve image I with S_x (filter), gives you G_x == I(x)S_x
+ #. Convolve image I with S_y (filter), gives you G_Y == I(y)S_y
+ #. If G_x is high and G_y is low, then vertical edge, if G_y is high and G_x is low, then horizontal edge
+ #. Divide G_x and G_y into blocks of size N x N (bigger than 1 by 1, smaller than 20 by 20)
+ #. Estimate the local orientation of *each* block
+      * theta = (1/2) * tan^-1(summation(i = 1 to W, summation(j = 1 to W, 2 * G_x(i, j) * G_y(i, j))) / (summation(i = 1 to W, summation(G_x^2(i, j) - G_y^2(i, j)))))
+      * Use atan2 in matlab
+  
+
+
+
+
+
+
+
+
+
+
+
