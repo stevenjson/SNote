@@ -1,0 +1,130 @@
+10/25 Notes
+===========
+
+Grading Schedule
+----------------
+Quiz 1 back : 10/27
+
+HW 1 back: 11/1
+
+Project 1 Back: 11/3
+
+Assignment Schedule
+--------------------
+
+HW 2: 10/25 - 11/1
+
+Project 2: 11/1 - 11/15
+
+HW 3: 11/22 - 12/1
+
+Orientation Field
+-----------------
+
+Each point has a number that represents a degree of orientation (0 - 360)
+
+2 approches to extract orientation Field
+ * FFT Method
+ * Gradient Method
+    * Implementing for project 2
+
+Level 2 Extraction steps
+------------------------
+
+Image -> Orientation Field -> Image Enhancement (use Gabor Filter) -> Binarization(highlight dark and light pixels) -> 
+Ridge Thinning -> Minutiae Extraction -> Post Processing
+
+Singular Points
+---------------
+
+2 Types
+ * Core
+ * Delta
+
+If all orientation of cells point the same way, it's a *non-Singular point*
+
+If substantial change in angle, then it's a *Core Point*
+
+If multiple radical angle divergence, it's a *delta point*
+
+If you find 2 loops, it's a *whorl core point*
+
+
+Poincare Index
+--------------
+
+In counterclockwise direction
+
+Orientation Field = theta = [0, pi)
+
+PI = (1 / pi) Summation[i = 0 to 7](Orientation Field[(i + 1) % 8] - Orientation Field[i])
+
+
+Corrected PI = (1 / pi) Summation[i = 0 to 7](delta(Orientation Field[(i + 1) % 8] - Orientation Field[i]))
+
+delta(theta) =
+ * theta - pi if theta > pi / 2
+ * theta if -pi / 2 <= theta <= pi/2
+ * pi + theta if theta < -pi / 2
+
+after delta, PI = one of 4 numbers
+ * if 0 -> Non SP (not interesting)
+ * if 1 -> loop
+ * if -1 -> delta
+ * if 2 -> Whorl (because sum of 2 loops)
+
+Classification
+--------------
+
+if no interesting points -> plain arch
+
+if core right above delta or vice versa -> tented arch
+
+if core northwest to delta -> left loop
+
+if core northeast to delta -> right loop
+
+if 2 cores in center (very close to each other) and 2 delta points -> whorl
+
+if 2 cores in center (farther apart) and 2 deltas -> twin loop
+
+Point Pattern Matching
+-----------------------
+
+Minutiae Point
+--------------
+
+(x, y, theta)
+
+so we get location and orientation in tuple
+
+Minutiae Matching
+-----------------
+
+What geometric transformation aligns 2 Minutiae point maps?
+
+Max score = total amount of points that could be aligned
+
+How do we go about this?
+
+Transformation called *Affine Transformation*
+
+Affine Transformation
+---------------------
+ * Rotation
+ * Translation
+
+So we use a combo of these 2 to find orientation
+
+If we have a set of points and another image with another set of points, what is the rotation
+and Translation of image such that we get max possible matching between image points?
+
+(See next class for more info)
+
+
+
+
+
+
+
+
