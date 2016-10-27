@@ -1,0 +1,84 @@
+10/27 Notes
+===========
+
+Minutiae Matching
+-----------------
+
+P = {(x_i, y_i, theta_i)} i = 1 -> N
+
+Q = {(x_j, y_j, theta_j)} j = 1 -> M
+
+T:P->Q congruent T(P)->Q
+
+(T is the transformation operation)
+
+T_theta = the rotation
+
+T_x = x translation
+
+T_y = y translation
+
+See Fig 1 in magna Notebook
+
+RANSAC Algorithm
+----------------
+
+Stands for Random Sample Consensus
+
+See Fig 1 in magna Notebook
+
+This Transforms all points in P according to t_x, t_y, t_theta, x_c, y_c: so P -> P'
+
+Then we check the number of correspondences between P' and Q (he wants us to think about how to do this)
+
+There will obviously be a tolerance for how close a point can be
+
+Alg
+___
+
+N_max = the number of points in correspondences = 0
+
+for i = 1 to N
+
+for j = 1 to M
+
+    -t_x = x_j - x_i
+
+    t_y = y_j - y_i
+
+    t_theta = theta_j - theta_i
+
+    for k = 1 to N
+
+        See fig 1 in magna Notebook
+
+        end for loop
+
+    compute number of corresponding points between P' and Q - N_y
+    
+    if N_y > N_max
+        
+        N_max = N_y
+
+    end for loop
+
+    end for loop
+
+compute score so S = (N_max)^2 / (NM) x 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
