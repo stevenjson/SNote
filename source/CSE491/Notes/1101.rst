@@ -1,0 +1,23 @@
+11/1 Notes Chapter 3
+====================
+
+Face Recognition
+----------------
+
+What kind of sensors are used?
+ * 2D Cameras - Get pixel values, similar to fingerprints - Predominitely used
+ * 3D Range scanners
+    * Get distance of parts of face (x, y, z)
+ * Video
+
+Sensors
+-------
+Visible light
+
+Near Infrared (NIR) - can take images in dark, can have ring of NIR leds, can burn if too strong
+
+Thermal - good in dark (better than NIR), no source of light, passive sensor, affected by heat of light
+
+
+
+

@@ -21,5 +21,6 @@ Contents:
    Notes/1011
    Notes/1013
    Notes/1025
+   Notes/1027
    :maxdepth: 1
    
