@@ -1,0 +1,111 @@
+11/3 Notes
+==========
+
+Face Detection
+---------------
+
+APplications
+ * Image retrival
+ * Law enforcement
+ * Biometrics
+ * Survallence
+
+Given an image, Determine
+-------------------------
+
+ * if faces are present
+ * the number of faces present
+ * the location and extent of each face in image
+ * the pose of each face - yaw, pitch, roll
+ * the identity of each face
+
+There is a part of the brain dedicated to detecting faces
+
+Methods
+-------
+
+Appearance Based Methods - use classifiers that operate directly on the normalized
+pixel intensity of the imgage without extracting any facial Features
+
+Rule based methods - employ knowledge of the components of the fase (rules human knows, not machine)
+
+Feature based methods - uses grouping of edges, skin shape and color, template matching to detect faces
+
+Texture based methods - uses textural feature to represent and detect facial patterns
+
+Only talking about Appearance based Methods
+
+Challenges
+----------
+
+Detecting faces as they move, or if faces enter frame - tracking
+
+Determining pose of the face
+
+Viola Jones Technique
+---------------------
+
+An image representation based on itegral image that allows for very fasst feature extraction
+
+A simple and efficiaent calssifier based on adaboost
+
+See slide?
+
+Features used:
+ * 2 rectangle feature
+ * 3 rectangle feature
+ * 4 rectangle feature
+
+f(x) = sum(W_i_j) - sum(B_i_j)
+
+W = white regions
+
+B = Black/grey regions
+
+See slides?
+
+Adaboost
+--------
+
+The weak learning algorithm is designed to select the single rectangle feature which best separates
+the positive and negative examples
+
+A weak classifier h(x,f,p,theta) consists of a feature f, a threshold theta and a polarity p,
+indicating the direction of the inequality:
+
+h(x,f,p,theta) = 1 if pf(x) < p*theta, 0 otherwise
+
+SEE SLIDES FOR STEPS OF ADABOOST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
