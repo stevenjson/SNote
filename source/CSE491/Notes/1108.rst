@@ -1,0 +1,93 @@
+11/08 Notes
+===========
+
+Face Recognition
+----------------
+
+Final Project is on Face Recognition
+
+What DPI is best
+ * Algorithm takes longer the higher the DPI
+ * Higher DPI can detect more differences
+ * A balence is required, depends on what you are doing
+
+Level 1
+ * General Shape
+ * Skin Tone
+
+Level 2 
+ * Facial Components
+    * eyes/nose/mouth
+ * Relationship between the Components is revealed
+ * have 30 to 75 IPD
+    * *IPD* is Inter Pupilary Distance - Distance between centers of the 2 eyes
+ * the more features you expose, the more vulnerable the image is to intra class variations
+    * Sad vs happey is an example
+    * Low resolution images are affected by this less than high resolution
+ 
+Most use Level 2
+
+Level 3
+ * Micro Features, which are vulnerable to intra class variarions as well
+    * Scars, freckles, skin discoloration, etc...
+
+Face Detection
+--------------
+
+Uses Adaboost
+ * set of *weak* classifiers that are combined
+
+Input Patch (x) --> Classifier (h) --> Face(y=1) or Not Face(y=0)
+
+Combine Weak Classifiers
+________________________
+
+Classifier = small red window
+
+Called Cascade Classifiers
+ * h_1(x) = 0 then non face
+ * h_1(x) = 1 then go to h_2(x)
+ * etc..
+
+h_i( input patch, haar filter, polarity, theta)
+
+polarity can be 1 or -1
+
+this should output 1 or 0
+
+1 if filter(x) > p x theta
+
+0 if filter(x) <= p x theta
+
+160,000 filters/classifiers to use
+
+
+Training
+--------
+
+Algorithm is in the book
+
+goal of Training
+ * Select T  Classifiers
+    * given set of examples - face or not face
+    * Assign a weight to each of the examplars
+    * Classifiy the examplars using each of the 160,000 classifiers
+    * select the Classifier that gives the *lowest* *weighted* error rate
+    * revise the weight of the examplars as follows
+       #. correctly classified examplars - no weight change
+       #. incorrectly classified examples - increase weight
+    * Loop back to Classifiy the examplars using now 159,999 classifiers
+       * continue till it covers everything? or hits T selected classifiers
+
+
+SHOULD GO OVER INTEGRAL IMAGES
+ * sum of pixels above and to the left of a chosen pixel
+
+
+
+
+
+
+
+
+
