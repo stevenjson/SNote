@@ -1,0 +1,79 @@
+11/15 Notes
+===========
+
+Face Recognition
+----------------
+
+ #. Appearance Based - using raw pixel intensities, completly agnostic to what the actual picture is
+      * Subspace analysis
+         * Linear subspace analysis
+            * PCA - Principle component analysis
+            * LDA - Linear Discriminate analysis
+            * ICA - Independant component analysis 
+         * Non Linear subspace analysis
+            * KPCA - Kernel Principle component analysis
+            * KLDA - Kernel Linear Discriminate analysis
+            * KICA - Kernel Independant component analysis 
+
+ #. Model Based Methods - model individual parts of the face to understand picture
+      * EBGM - Elastic bunch graph matching - specific for face
+      * AAM - Active appearence model - can be used for more
+
+ #. Texture Based Methods - dont care if face or not, extract features from image
+      * SIFT - Scale invariante feature transformation
+      * LBP - Local Binary Pattern
+      * LBQ - Local Phase Quantization
+      * BSIF - Binarized statistical image feature
+
+DeepFace - deep learning
+------------------------
+
+Turk and Pentland
+ * Created PCA 
+
+
+Most face Recognition algorithims take only eyes, nose, mouth region into account
+
+In Face Recognition, image becomes vector
+
+Let's say the length of this vector is d
+
+d = the dimention it is in = N x N = pixel count
+
+Dimentionality Reduction is used in PCA
+ * Face Images can be represented by a point in NxN space = the vector
+ * can drop info from high dimentions to lower dimentions
+ 
+PCA
+---
+
+Input face image = sum of many different face images (always the same faces) (eigenfaces)
+
+Weight associated with faces (eigenfaces) changes for each input face
+
+Finding Eigenfaces
+------------------
+
+*Step 1* - Given a set of training images, comvert images into vector X1, X2, ... , XN where N is the total training images
+
+Each vector becomes a column vector of size d by 1
+
+*Step 2* - compute the mean face *mui* vector
+
+*mui* = Xbar
+
+*mui* is  a vector of d by 1 = column vector
+
+*Step 3* - Compute the mean-subtracted face vectors
+
+Matrix X = [X1 - *mui*, X2 - *mui*, ..., XN - *mui*]
+
+Remember that Xi - *mui* is still a colunm vector so matrix X is d by N
+
+*Step 4* - Compute the covarience matrix of matrix X
+
+This captures the varience of the the faces
+
+Matrix Cov = X times XTranspose
+
+Matrix Cov is d by d
