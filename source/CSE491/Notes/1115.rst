@@ -58,17 +58,22 @@ Finding Eigenfaces
 
 Each vector becomes a column vector of size d by 1
 
+
 *Step 2* - compute the mean face *mui* vector
 
-*mui* = Xbar
+*mui* = Xbar of vectors
 
 *mui* is  a vector of d by 1 = column vector
 
-*Step 3* - Compute the mean-subtracted face vectors
+
+*Step 3* - Compute the mean-subtracted faces vectors
 
 Matrix X = [X1 - *mui*, X2 - *mui*, ..., XN - *mui*]
 
 Remember that Xi - *mui* is still a colunm vector so matrix X is d by N
+
+this shifts the origin to the center of face vectors
+
 
 *Step 4* - Compute the covarience matrix of matrix X
 
@@ -77,3 +82,78 @@ This captures the varience of the the faces
 Matrix Cov = X times XTranspose
 
 Matrix Cov is d by d
+
+This creates a matrix that each diagonal element is the varience of that dimention
+
+THe off diagonal elements tell us how the points are distribted based on the 2 dimetions
+
+so in row 2,column 10 in the matrix, it is comparing dimetion 2 with dimetion 10
+
+
+*Step 5* - compute the eigenvectors of Matrix Cov
+
+Use eigs in matlab - this solves Cov x E = lambda x E
+
+Gives you 2 values
+
+Output = [e_1, e_2, e_3, ... , e_d] which is d by 1
+
+where e_i is an eigenvector of 1 by d
+
+so output is d by d
+
+for each e_i you also get an eigen value which is a single value
+
+the larger the eigenvalue, the greater the spread of points along that eigenvector
+
+So relationship tends to be v_1 > v_2 > ... > v_d
+
+
+All of this is to get the weight vectors for each eigenface
+
+
+
+TO get compact space, take eigenvectors and select a new matrix e_k such that
+it only contains the top K eigenvectors. THe top K are determined by v_i. Higher is better
+
+95% Rule
+--------
+
+If you take the eigenvalues and keep adding eigenvalues until you get .95 from the equation below
+
+(v_1 + v_2 + ... v_k) / (v_1 + v_2 + ... v_d) = .95
+
+
+v_k is the value you get to 0.95 on
+
+All of this gives us the compact space
+
+Testing Phase
+-------------
+
+Consider 2 face images
+
+FA and FA (both are matricies)
+
+ #. convert them to vectors: XA and XB (both are d by 1)
+ #. YA = XA - *mui*    YB = XB - *mui* (both Y are d by 1)
+ #. Compute the feature vector
+      * WA and WB - these are the weights 
+      * WA = E_kTranspose (this is the top K eigenvectors, is k by d) x YA  ---- so WA is k by 1
+      * same process for WB, also gives k by 1 matrix
+ #. Compute match score
+      * ScoreAB = Euclidian distance between WA and WB
+
+
+
+
+
+
+
+
+
+
+
+
+
+

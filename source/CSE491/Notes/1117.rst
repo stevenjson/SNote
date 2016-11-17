@@ -1,0 +1,41 @@
+11/17 Notes
+===========
+
+HW 3 due December 1st
+
+Project 3 due December 16th
+
+Quiz 3 sometime
+
+Can take quiz 4 if you want, takes top 3 quizzes
+
+PCA
+---
+
+Face images can be denoted as a point in high dimentional space (d x 1)
+
+Each eigenvector is known as a PC
+
+Eigenvectors pivot in center of image points
+
+face image = f
+
+f = weight_1 x eigenvector_1 + weight_2 x eigenvector_2 + ... + weight_d x eigenvector_d
+
+See notes from tuesday
+
+LDA
+---
+
+Each subject has a label, PCA does not do this
+
+In LDA you want the subjects seperated
+
+The only difference between PCA and LDA is how we compute Covarience matrix
+(calculate 2 of them in LDA)
+
+Sw and SB are the 2 Cov matricies
+
+
+
+
