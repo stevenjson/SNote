@@ -1,0 +1,78 @@
+11/29 Notes
+===========
+
+EBGM
+----
+
+3 components 
+ #. Fiduecial
+ #. Gabor Jets
+ #. Bunch Graphs
+
+Training
+--------
+
+You have a face image
+
+ignore ear and hair
+
+uses fiducial points (aka landmark points) on the face, like corners of eyes, point of nose and mouth corners
+
+Once we have the fiducial points
+ #. construct gabor jets
+      * use gabor filter
+         * See magna notebook for equation
+
+ #. Bunch Graphs
+      * see magna notebook
+
+ #. Face Bunch Graph
+      * see magna notebook
+
+
+Testing
+-------
+
+Each subject has a Face Bunch graph (FBG)
+
+We have a test image
+
+No bunch graph for test image, only has a face graph
+
+See magna notebook
+
+
+Texture Based
+-------------
+
+LBP
+---
+
+Takes an input face
+
+Adjusts for the pixel intensity variations
+
+Is a Photometric normalization
+
+For grayscale images
+
+See magna notebook
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
