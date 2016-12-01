@@ -1,0 +1,41 @@
+12/01 Notes
+===========
+
+Iris Recognition
+----------------
+
+Daugman
++++++++
+
+Developed an algorithm that could perform iris Recognition
+
+"Father" of iris Recognition
+
+3 parts
+ * Segmentation
+ * Normalization
+ * Encoding
+
+Anatomy
++++++++
+
+Primary purpose of the iris is to regulate the light that enters the pupil
+
+see magna notebook
+
+Why is iris obtained in near infrared spectrum
+ * Cant get textures from dark iris with visible light since melinan absorbs it
+ * Iris reacts to visible light, and shrinks or grows, near IR does not affect the iris
+
+Chaomorphagenesis - randomness of iris
+
+Left and right iris are different from each other
+
+Algorithm
++++++++++
+
+How do we extract the iris from the ocular region?
+
+see magna notebook
+
+
