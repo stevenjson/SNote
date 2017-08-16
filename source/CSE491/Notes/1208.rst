@@ -1,0 +1,24 @@
+12/08 Notes
+===========
+
+Iris Rrecognition
+-----------------
+ #. Iris Imaging
+ #. Segmentation
+ #. Normalization
+ #. Encoding/Matching
+
+
+Normalization
+-------------
+
+Convert iris into Fixed Sized Rectangel - essential for encoding
+
+Use Cartisian Coordinate system --> PseudoPolar Coordinate System
+
+WHy do we need to normalize?
+ * to account for pupil dialation and contraction for the same subject
+ * to account for distance from eye when image is taken
+ * to account for different sized iris'
+
+ END OF SEMESTER
